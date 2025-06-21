@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("./assets/images/background-pattern-desktop.svg") no-repeat top fixed;
+  background-size: auto 50%;
+
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.faq-container {
+  max-width: 500px;
+  padding: 2rem;
+}
+
+
+
+.faq-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.faq-header .icon {
+  color: purple;
+  font-size: 1.5rem;
+}
+
+.faq-header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.faq-item {
+  border-top: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.faq-item button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #2d0a4f;
+}
+
+.faq-item .answer {
+  margin-top: 0.5rem;
+  color: #6f6f6f;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.faq-item.active .answer {
+  display: block;
+}
+
+.faq-item.active button span {
+  transform: rotate(45deg);
+}
